@@ -1,6 +1,6 @@
 .body{
-    margin: 30px;
-    background-image: url("8bit_wallpaper7.jpg");
+    margin: 2%;
+    background-image: url("bgpink.jpg");
 }
 .my-container{
     background-color: #F8F9FA;
@@ -19,8 +19,8 @@
     color: #c90016;
     border-bottom: 5px solid black;
 }
-.my-image{
-        max-width:50%;
+.img-responsive{
+        max-width:60%;
         height:auto;
         padding-top: 10%;
 }

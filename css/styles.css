@@ -21,8 +21,9 @@
 }
 .img-responsive{
         max-width:60%;
-        height:auto;
+        max-height: auto;
         padding-top: 10%;
+        vertical-align: middle;
 }
 .big-font{
     font-size: large;

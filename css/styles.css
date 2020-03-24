@@ -20,16 +20,12 @@
     border-bottom: 5px solid black;
 }
 .img-responsive{
-        width:60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:70%;
         height: auto;
         padding-top: 10%;
-        vertical-align: middle;
-}
-.my-img{
-  width:200px;
-  height: auto;
-  border-radius:50%;
-  padding-top: 20px;
 }
 .big-font{
     font-size: large;

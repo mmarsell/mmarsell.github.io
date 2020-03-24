@@ -20,11 +20,12 @@
     border-bottom: 5px solid black;
 }
 .my-image{
+        max-width:50%;
+        height:auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
-        width: 50%;
 }
 .big-font{
     font-size: large;

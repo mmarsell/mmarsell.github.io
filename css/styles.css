@@ -19,11 +19,12 @@
     color: #c90016;
     border-bottom: 5px solid black;
 }
+
 .img-responsive{
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width:50%;
+        width:12vw;
         padding-top: 10%;
 }
 .fa-github{

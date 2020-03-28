@@ -27,6 +27,13 @@
         width:12vw;
         padding-top: 10%;
 }
+
+.carousel-control-prev-icon{
+  filter:invert(1);
+}
+.carousel-control-next-icon{
+  filter:invert(1);
+}
 .fa-github{
   font-size:8vw;
   color:#24292e;
@@ -34,6 +41,10 @@
 .fa-linkedin{
   font-size:8vw;
   color:#0e76a8;
+}
+.fa-youtube{
+  font-size:6vw;
+  color:#FF0000;
 }
 .fab:hover {
   color:#c90016;

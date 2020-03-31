@@ -5,6 +5,7 @@
 .my-container{
     background-color: #F8F9FA;
     border-radius: 1%;
+    padding-bottom: 2%;
 
 }
 .my-row{
@@ -43,11 +44,18 @@
   color:#0e76a8;
 }
 .fa-youtube{
-  font-size:6vw;
+  font-size:150px;
   color:#FF0000;
+}
+.fa-download{
+  font-size:50px;
+  color:#c90016;
 }
 .fab:hover {
   color:#c90016;
+}
+.fas:hover {
+  opacity: 50%;
 }
 .big-font{
     font-size: large;
@@ -55,14 +63,11 @@
 .background-resume{
   background-color: #F8F9FA;
 }
-
 .tooltip {
 position: relative;
 display: inline-block;
 border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
-
-
 /* Tooltip text */
 .tooltip .tooltiptext {
 visibility: hidden;

@@ -2,7 +2,9 @@ body {
   margin: 2%;
 	background: linear-gradient(-45deg, #3b8d99,#6b6b83,#aa4b6b);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+  padding-top:30px;
+  padding-bottom: 30px;
 }
 
 @keyframes gradient {
@@ -22,6 +24,10 @@ body {
     padding-bottom: 2%;
 
 }
+  .my-logo:hover {
+    opacity: 70%;
+  }
+
 .my-row{
     border: 3px solid red;
 }
@@ -53,12 +59,16 @@ body {
   font-size:8vw;
   color:#24292e;
 }
+.fa-medium{
+  font-size:8vw;
+  color:#292929;
+}
 .fa-linkedin{
   font-size:8vw;
   color:#0e76a8;
 }
 .fa-youtube{
-  font-size:150px;
+  font-size:8vw;
   color:#FF0000;
 }
 .fa-download{
@@ -155,10 +165,10 @@ body{
 }
 
 .bar.front::before{
-  background-color: #c90016;
+  background-color: #23cba7;
 }
 .bar.back::before{
-  background-color: #63aaff;
+  background-color: #23cba7;
 }
 
 .bar.learning::before{

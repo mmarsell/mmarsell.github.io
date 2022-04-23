@@ -130,6 +130,11 @@ body {
     transform: scale(1) rotate(360deg);
   }
 }
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-ransform: scale(1) rotate(360deg);
+  }
+}
 
 @keyframes gradient {
 	0% {

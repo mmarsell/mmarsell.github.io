@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon_package_v0.16/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
@@ -11,399 +11,51 @@
     <link rel="manifest" href="favicon_package_v0.16//site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6cf6c09b6c.js" crossorigin="anonymous"></script>
     <title>Michael Marsella</title>
-    
+
 
 </head>
-<body class="body">
-    <div class="container my-container" >
-        <div class="row align-items-center">
-            <div class="col" style="text-align: right;">
-                <a href="https://medium.com/@miqlonyt" target="_blank"><i class="fab fa-medium"></i></a>
-            </div>
-            <div class="col" style="text-align: right;">
-                <a href="https://www.linkedin.com/in/michael-marsella/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <div class="col align-self-center">
-                 <img src="images/circle-cropped.png" class="img-responsive" alt="Profile">
-            </div>
-            <div class="col" style="text-align: left;">
-                <a href="https://github.com/mmarsell" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="col" style="text-align: left;">
-                <a href="https://youtube.com/miqlyt" target="_blank"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h2 class="my-header">Education</h2>
-                <a id="edu" tabindex="0" class="btn btn-block btn-light" role="button" data-toggle="modal" data-target="#eduModal">
-                    <p style="text-align:left;">
-                        <h3 class="text-left"><b>University of California, San Diego</b></h3>
-                        <span style="float:right;">
-                            <h4 class="text-right d-none d-md-block">Graduated June 2020</h4>
-                        </span>
-                    </p>
-                        
-                    <h3 class="text-left"><em>Bachelor of Science: Mathematics-Computer Science</em></h3>
 
+<!--Rotating icons from https://codepen.io/steve_walson/pen/QWaVvZL-->
+<body>
+    <div class="container" >
+        <div class="social">
+            <a href="https://www.linkedin.com/in/michael-marsella/" target="_blank" class="linkedin">
+                <svg viewBox="0 0 48 48" height="48">
+                    <title>LinkedIn</title>
+                    <path fill="#fff" d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"/>
+                  </svg>
                 </a>
-                <a id="edi" tabindex="0" class="btn btn-block btn-light" role="button" data-toggle="modal" data-target="#ediModal">
-                    <p style="text-align:left;">
-                        <h3 class="text-left"><b>The University of Edinburgh<br></b></h3>
-                        <span style="float:right;">
-                            <h4 class="text-right d-none d-md-block">September 2019 - December 2019</h4>
-                        </span>
-                    </p>
-                    <h3 class="text-left"><em>Visiting Student Program</em></h3>
-                </a>
-                <h2 class="my-header">Relevant Experience</h2>
-                <a id="ng" tabindex="0" class="btn btn-block btn-light" role="button" data-toggle="modal" data-target="#ngModal">
-                    <p style="text-align:left;">
-                        <h3 class="text-left">Northrop Grumman - Aerospace Systems</h3>
-                        <span style="float:right;">
-                            <h4 class="text-right d-none d-md-block">June 2019 - August 2019</h4>
-                        </span>
-                    </p>
-                    <h5 class="text-left"><em>Co-Lead Software Engineering Intern</em></h5>
-                </a>
-                <a id="fbi" tabindex="0" class="btn btn-block btn-light" role="button" data-toggle="modal" data-target="#fbiModal">
-                    <p style="text-align:left;">
-                        <h3 class="text-left">FBI - Cyber Divsion: Office of Data Exploitation</h3>
-                        <span style="float:right;">
-                            <h4 class="text-right d-none d-md-block">June 2018 - May 2019</h4>
-                        </span>
-                    </p>
-                    <h5 class="text-left"><em>Software Development Intern</em></h5>
-                </a>
-
-                <h2 class="my-header">Projects</h2>
-                <a id="mapsella" tabindex="0" class="btn btn-block btn-light" role="button" data-toggle="modal" data-target="#mapModal">
-                    <p style="text-align:left;">
-                        <h3 class="text-left">Mapsella</h3>
-                        <span style="float:right;">
-                            <h4 class="text-right d-none d-md-block">May 2019 - August 2019</h4>
-                        </span>
-                    </p>
-                    <h5 class="text-left"><em>E-Commerce Store</em></h5>
-                </a>
-                <a id="majormap" tabindex="0" class="btn btn-block btn-light" role="button" data-toggle="modal" data-target="#majorModal">
-                    <p style="text-align:left;">
-                        <h3 class="text-left">Major Map Initiative</h3>
-                        <span style="float:right;">
-                            <h4 class="text-right d-none d-md-block">January 2020 - Current</h4>
-                        </span>
-                    </p>
-                    <h5 class="text-left"><em>Major Courses Visualization</em></h5>
-                </a>
-                <a id="heatsync" tabindex="0" class="btn btn-block btn-light" role="button" data-toggle="modal" data-target="#appModal">
-                    <p style="text-align:left;">
-                        <h3 class="text-left">HeatSync iOS Interface</h3>
-                        <span style="float:right;">
-                            <h4 class="text-right d-none d-md-block">April 2020 - May 2020</h4>
-                        </span>
-                    </p>
-                    <h5 class="text-left"><em>Mobile App User Interface</em></h5>
-                </a>
-                <a id="miql" tabindex="0" class="btn btn-block btn-light" role="button" data-toggle="modal" data-target="#miqlModal">
-                    <p style="text-align:left;">
-                        <h3 class="text-left">MIQL</h3>
-                        <span style="float:right;">
-                            <h4 class="text-right d-none d-md-block">July 2019 - Current</h4>
-                        </span>
-                    </p>
-                    <h5 class="text-left"><em>Educational Youtube Channel</em></h5>
-                </a>
-                <h2 class="my-header">Technical Skills</h2>
-                <div class="row">
-                    <div class="col">
-                        <div class="bar back basic" data-skill="CSS"></div>
-                        <div class="bar back basic" data-skill="MATLAB"></div>
-                        <div class="bar back basic" data-skill="JavaScript"></div>
-                        <div class="bar back intermediate" data-skill="HTML"></div>
-                        <div class="bar back intermediate" data-skill="Java"></div>
-                        <div class="bar back intermediate" data-skill="C"></div>
-                        <div class="bar front advanced" data-skill="C++"></div>
-                        <div class="bar front advanced" data-skill="Python"></div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col align-self-center" style="text-align: center;">
-                        <a href="michael_marsella_resume.pdf" style="border-top:5px solid black;" class="btn btn-block btn-light" target="_blank" download="MichaelMarsellaResume" role="button">
-                            <h3 style="color: #c90016;">Download </h3></a>
-                    </div>
-                </div>
-                <div class="modal fade" id="eduModal" tabindex="-1" role="dialog" aria-labelledby="eduModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <img class="d-block" style="width: 50%; padding: 0;" src="images/ucsd-logo-1.jpg" alt="UCSD Logo">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="big-font">Graduated June 2020</p>
-                                <b class="big-font"> Minor in Entrepreneurship and Innovation <br/>
-                                    Cummulative GPA: 3.51 <br/>
-                                    <br/>
-                                </b>
-
-                                <p class="big-font" >Relevant courses taken:</p>
-                                <ul class="big-font">
-                                    <li>Advanced Data Structures</li>
-                                    <li>Analysis of Algorithms</li>
-                                    <li>Business Innovation and Growth</li>
-                                    <li>Combinatorics</li>
-                                    <li>Computer Organization and Systems Programming</li>
-                                    <li>Discrete Mathematics</li>
-                                    <li>E-Commerce</li>
-                                    <li>Foundations of Game Theory</li>
-                                    <li>Innovation and Tech Strategy</li>
-                                    <li>Innovation to Market</li>
-                                    <li>Linear Algebra</li>
-                                    <li>Mathematical Softwares</li>
-                                    <li>New Venture Finance</li>
-                                    <li>Nonlinear Programming</li>
-                                    <li>Numerical Optimization and Linear Programming</li>
-                                    <li>Product Promotion and Brand Management</li>
-                                    <li>Theory of Computation</li>
-                                    <li>Web Application Performance and Maintenance</li>
-                                </ul>
-                            </div>
-                        </div>              
-                    </div>
-                </div>
-                <div class="modal fade" id="ediModal" tabindex="-1" role="dialog" aria-labelledby="ediModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <img class="d-block" style="width: 60%;" src="images/edinlogo.png" alt="EDI Logo">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="big-font">September 2019 - December 2019</p>
-                                <p class="big-font">Accepted into the study abroad visiting student program.</p>
-                                <p class="big-font" >Relevant courses taken abroad:</p>
-                                <ul class="big-font">
-                                    <li>Extreme Computing</li>
-                                    <li>Globalization and Trade</li>
-                                    <li>Probability</li>
-                                </ul>
-                            </div>
-                        </div>              
-                    </div>
-                </div>
+            </a>
+            <a href="https://github/mmarsell" target="_blank" class="github">
+                <svg viewBox="0 0 24 24" height="24">
+                    <title>Github</title>
+                    <path style="fill:white" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
             
-                <div class="modal fade" id="ngModal" tabindex="-1" role="dialog" aria-labelledby="ngModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <img class="d-block" style="width: 50%;" src="images/nglogo.png" alt="NG Logo">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="big-font">June 2019 - August 2019</p>
-                                <p class="big-font">Responsibilities:</p>
-                                <ul class="big-font">
-                                    <li>Managed a team of six software engineering interns.</li>
-                                    <li>Presented managerial accomplishments and goals to chief engineers and higher-level management.</li>
-                                    <li>Improved software documentation to increase future team efficiency.</li>
-                                    <li>Migrated a software application to a webtool utilizing C++ and JavaScript.</li>
-                                    <li>Engaged in Agile project management style.</li>
-                                    <li>Collaboratively tested software in simulation environment.</li>
-                                </ul>
-                            </div>
-                        </div>              
-                    </div>
-                </div>
+                  </svg>
+            </a>
+            <a href="https://youtube.com/marselluh" target="_blank" class="youtube">
+                <svg role="img" viewBox="0 0 461.001 461.001" height="23">
+                    <title>YouTube</title>
+                    <path style="fill:white;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728   c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137   C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607   c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
+                  </svg>
+            </a>
+            <a href="michael_marsella_resume.pdf" target="_blank" class="resume" download>
+                <svg role="img" viewBox="0 0 24 24" height="24">
+                    <title>Resume</title>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7368 2.76196H8.08376C6.02476 2.76196 4.24976 4.43096 4.24976 6.49096V17.204C4.24976 19.38 5.90876 21.115 8.08376 21.115H16.0728C18.1328 21.115 19.8018 19.265 19.8018 17.204V8.03796L14.7368 2.76196Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.474 2.75024V5.65924C14.474 7.07924 15.623 8.23124 17.042 8.23424C18.359 8.23724 19.706 8.23824 19.797 8.23224" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.4" d="M14.2841 15.5579H8.88708" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.4" d="M12.2426 10.6057H8.8866" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+            </a>
+        </div>
+        
+        <div class="profile"></div>
+    </div>
 
-                <div class="modal fade" id="fbiModal" tabindex="-1" role="dialog" aria-labelledby="fbiModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <img class="d-block float-right" style="width: 15%;" src="images/fbiseal.png" alt="FBI Logo">
-                                <h5 class="modal-title" id="fbiModalLabel" style="vertical-align: middle;"> FBI-Cyber Division </h5>
-
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="big-font">June 2018 - May 2019</p>
-                                <p class="big-font">Responsibilities:</p>
-                                <ul class="big-font">
-                                    <li>Received and maintained top-secret security clearance (TS-SCI).</li>
-                                    <li>Organized large amounts of data of varying content.</li>
-                                    <li>Wrote software to improve the presentation of data to intelligence analysts.</li>
-                                    <li>Worked collaboratively alongside junior and senior level software engineers.</li>
-                                    <li>Acclimated to full software development process.</li>
-                                    <li>Developed software in a test environment.</li>
-                                    <li>Introduced efficiencies into existing processes.</li>
-                                </ul>
-                            </div>
-                        </div>              
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="mapModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <img class="d-block" style="width: 40%;" src="images/mapsella_cropped.jpg" alt="Mapsella Logo">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col"> 
-                                <p class="big-font">May 2019 - August 2019</p>
-                                <p class="big-font">Accomplishments:</p>
-                                    <ul class="big-font">
-                                        <li>Established a Shopify based e-commerce business focused on travel gifts.</li>
-                                        <li>Utilized the Google Marketing Platform to gauge consumer perceptions and product analytics.</li>
-                                        <li>Implemented SEO optimization techniques.</li>
-                                        <li>Conducted market research and competitor analysis.</li>
-                                        <li>Researched and negotiated with foreign manufacturers and sources for product fulfillment.</li>
-                                    </ul>
-                                    <div id="carouselMapsella" class="carousel slide" data-ride="carousel">
-                                        <ol class="carousel-indicators">
-                                          <li data-target="#carouselMapsella" data-slide-to="0" class="active"></li>
-                                          <li data-target="#carouselMapsella" data-slide-to="1"></li>
-                                          <li data-target="#carouselMapsella" data-slide-to="2"></li>
-                                          <li data-target="#carouselMapsella" data-slide-to="3"></li>
-                                          <li data-target="#carouselMapsella" data-slide-to="4"></li>
-                                        </ol>
-                                        <div class="carousel-inner">
-                                          <div class="carousel-item active">
-                                            <img class="d-block w-100" src="images/landing1.PNG" alt="First slide">
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img class="d-block w-100" src="images/landing2.PNG" alt="Second slide">
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img class="d-block w-100" src="images/landing3.PNG" alt="Third slide">
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img class="d-block w-50" style="margin: auto;" src="images/facebook_profile_image.png" alt="Fourth slide">
-                                          </div>
-                                        </div>
-                                        <a class="carousel-control-prev" href="#carouselMapsella" role="button" data-slide="prev">
-                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                          <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carouselMapsella" role="button" data-slide="next">
-                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                          <span class="sr-only">Next</span>
-                                        </a>
-                                      </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>              
-        </div>
-    </div>
-    <div class="modal fade" id="majorModal" tabindex="-1" role="dialog" aria-labelledby="majorModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="majorModalLabel">Major Map</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class ="row">
-                            <div class="col">
-                                <p class="big-font">January 2020 - Current</p>
-                                <p class="big-font">Used Python and Javascript to create a graph visualization of courses for UCSD, to help students better understand the various paths toward obtaining their degree.<br/></p>
-                                <p class="big-font">Example for CSE 101: Algorithms:</p>
-                                <img class="d-block w-100" src="images/majormap.png" alt="Diagram">
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-            </div>              
-        </div>
-    </div>
-    <div class="modal fade" id="appModal" tabindex="-1" role="dialog" aria-labelledby="appModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="majorModalLabel">App User Interface</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class ="row">
-                            <div class="col">
-                                <p class="big-font">April 2020 - May 2020</p>
-                                <p class="big-font">Paid to develop iOS user interface for sponsored mechanical engineering student project.<br/></p>
-                            </div>
-                        </div>
-                        <div class ="row">
-                            <div class="col">
-                                <img class="d-block w-100" src="images/ui2.png" alt="User interface 2">
-                            </div>
-                            <div class="col">
-                                <img class="d-block w-100" src="images/ui1.png" alt="User interface 1">
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-            </div>              
-        </div>
-    </div>
-    <div class="modal fade" id="miqlModal" tabindex="-1" role="dialog" aria-labelledby="miqlModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="my-logo" href="https://youtube.com/miqlyt" target="_blank">
-                        <img class="d-block justify-content-center" style="width: 30%;" src="images/miqlIcon.png" alt="MIQL Logo">
-                    </a>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col" style="text-align: center;">
-                                <p class="big-font">July 2019 - Current</p>
-                                <p class="big-font">Informational YouTube channel covering topics related to university life and developing technical skills.</p>
-                                <p>Featured video:</p>
-                                <iframe width="280" height="157" src="https://www.youtube.com/embed/mhpslN-OD_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                           
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>              
-        </div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-            $('[data-toggle="popover"]').popover();      
-        });
-        </script>
 </body>
 </html>

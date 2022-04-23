@@ -132,7 +132,7 @@ body {
 }
 @-webkit-keyframes rotate {
   100% {
-    -webkit-ransform: scale(1) rotate(360deg);
+    -webkit-transform: scale(1) rotate(360deg);
   }
 }
 

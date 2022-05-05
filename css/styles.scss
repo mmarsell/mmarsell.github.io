@@ -1,0 +1,171 @@
+$white: #fff;
+$black: #000;
+
+
+@mixin hc() {
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+@mixin vc(){
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+@mixin cc() {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color){
+  ::-webkit-scrollbar-button{
+    display: none;
+  }
+  ::-webkit-scrollbar{
+    width: $size;
+    height: $size;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border: 1px solid lighten($foreground-color, 10%);
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+    width: calc(#{size} *2);
+    border: 2px solid lighten($background-color, 10%);
+  }
+  ::-webkit-scrollbar-track-piece{
+    background: $background-color;
+    width: calc(#{$size} / 2);
+    border: 2px solid lighten($background-color, 10%);
+  }
+
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+@include scrollbars(2px, rgba(255, 255, 255, 0.15), transparent);
+
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 5vmin;
+}
+  
+body {
+  display: grid;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: $white;
+  background: #333;
+  background-image: url(../images/background.webp);
+
+
+.card {
+  margin: auto;
+  padding: .5em;
+  border-radius: 1em;
+  position: relative;
+  border: 1px solid transparentize($white, 0.5);
+  text-shadow: 0 0 1em transparentize($black, 0.5);
+  background: transparentize($white, 0.8);
+  backdrop-filter: blur(20px);
+  transform: perspective(500px);
+  transform-style: preserve-3d;
+  max-width: 50%;
+  height: auto;
+  max-height: 85%;
+
+
+ .card  > .profile{
+  transform: translateZ(20px);
+  display: block;
+  justify-content: center;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile > img {
+  max-width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.card-body{
+  font-size: 1.5em;
+  display: flex;
+  place-items: center;
+  height: 50vh;
+}
+
+.social{
+  margin-top: -20vh;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  place-items: center;
+  transform: scale(0.5);
+  transform-origin: center;
+  transform-box: fill-box;
+  filter: drop-shadow(10px 10px 10px #333);
+  gap: 50px;
+}
+
+.social a {
+  height: 40vh;
+  width: 40vh;
+  border-radius: 50%;
+  place-items: center;
+  display: grid;
+  fill: #fff;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+}
+
+.social a:hover,
+.social a:focus{
+  background-color: #aab8c2;
+}
+
+.social a:hover > svg,
+.social a:focus > svg {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.social .linkedin {
+  background-color: #0072b1;
+}
+
+.social .instagram {
+  background-color: #e1306c;
+}
+
+.social .github {
+  background-color: #333;
+}
+
+.social .youtube {
+  background-color: #FF0000;
+}
+
+.social .resume {
+  background-color: #282828;
+}
+
+  }
+}

@@ -1,78 +1,106 @@
- :root{
-  --prim: transparent;
-  --sec: #fcdc6a21;
+::-webkit-scrollbar-button {
+  display: none;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  width: calc(size *2);
+  border: 2px solid rgba(26, 26, 26, 0);
+}
+
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+  width: calc(2px / 2);
+  border: 2px solid rgba(26, 26, 26, 0);
 }
 
 body {
+  scrollbar-face-color: rgba(255, 255, 255, 0.15);
+  scrollbar-track-color: transparent;
+}
+
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 5vmin;
+}
+
+body {
+  display: grid;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(-45deg, #565c5e,#455954,#9d7463, #b5c2c7, #dfdbd8);
-	background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-.container {
-  height: 300px;
-  width: 300px;
-  position: relative;
-}
-
-.profile {
-  background-image: url(../images/circle-cropped.png);
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  transform: translate(50%, -50%);
-  border-radius: 50%;
-  transition: transform 0.4s ease-in-out;
-  filter: drop-shadow(10px 10px 10px #333);
-}
-
-.profile::before {
-  content: "Hover";
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  margin: 0;
+  padding: 0;
   color: #fff;
-  padding: 5px 8px;
-  position: absolute;
-  bottom: -4%;
-  right: 50%;
-  transform: translateX(50%);
-  border-radius: 9999px;
-  background-color: #333;
+  background: #333;
+  background-image: url(../images/background.webp);
 }
-.social{
-  height: 100%;
-  width: 100%;
+body .card {
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 1em;
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2,auto);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  transform: perspective(500px);
+  transform-style: preserve-3d;
+  max-width: 50%;
+  height: auto;
+  max-height: 85%;
+}
+body .card .card > .profile {
+  transform: translateZ(20px);
+  display: block;
+  justify-content: center;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .card .profile > img {
+  max-width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+body .card .card-body {
+  font-size: 1.5em;
+  display: flex;
   place-items: center;
-  gap: 150px;
+  height: 50vh;
+}
+body .card .social {
+  margin-top: -20vh;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  place-items: center;
   transform: scale(0.5);
   transform-origin: center;
   transform-box: fill-box;
   filter: drop-shadow(10px 10px 10px #333);
+  gap: 50px;
 }
-
-.social a {
-  height: 50px;
-  width: 50px;
+body .card .social a {
+  height: 40vh;
+  width: 40vh;
   border-radius: 50%;
   place-items: center;
   display: grid;
@@ -80,70 +108,29 @@ body {
   transition: all 0.1s ease-in-out;
   position: relative;
 }
-
-.social a:hover,
-.social a:focus{
+body .card .social a:hover,
+body .card .social a:focus {
   background-color: #aab8c2;
 }
-
-.social a:hover > svg,
-.social a:focus > svg {
+body .card .social a:hover > svg,
+body .card .social a:focus > svg {
   transform: scale(1.2);
   transition: all 0.2s ease-in-out;
 }
-
-.social .linkedin {
+body .card .social .linkedin {
   background-color: #0072b1;
 }
-
-.social .instagram {
+body .card .social .instagram {
   background-color: #e1306c;
 }
-
-.social .github {
+body .card .social .github {
   background-color: #333;
 }
-
-.social .youtube {
+body .card .social .youtube {
   background-color: #FF0000;
 }
-
-.social .resume {
+body .card .social .resume {
   background-color: #282828;
 }
 
-.container:hover .social {
-  transform: scale(1);
-  animation: rotate 20s linear infinite;
-}
-
-.container:hover .social:hover{
-  animation-play-state: paused;
-}
-
-.container:hover .profile {
-  transform: translate(50%, -50%) scale(0.8);
-}
-
-@keyframes rotate {
-  100% {
-    transform: scale(1) rotate(360deg);
-  }
-}
-@-webkit-keyframes rotate {
-  100% {
-    -webkit-transform: scale(1) rotate(360deg);
-  }
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+/*# sourceMappingURL=styles.css.map */

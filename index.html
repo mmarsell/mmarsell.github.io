@@ -11,10 +11,11 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Michael Marsella</title>
+    
 
 
-<!--icons from https://codepen.io/eskside_design/pen/RNemLB/-->
 <!-- card design inspired by https://codepen.io/pieter-biesemans/pen/QWKmXEE-->
 <body>
     <div class="card" data-tilt data-tilt-scale="0.95" data-tilt-startY="40">
@@ -22,35 +23,18 @@
             <img src="./images/circle-cropped.png">
             <center><h3 style="font-family: Arial, Helvetica, sans-serif;">Michael Marsella</h3></center>
         </div>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/michael-marsella/" target="_blank" class="linkedin">
-                <svg viewBox="0 0 48 48" height="300">
-                    <title>LinkedIn</title>
-                    <path fill="#fff" d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"/>
-                    </svg>
-                </a>
+        <div class="card-body">
+            <a href="https://www.linkedin.com/in/michael-marsella/" target="_blank" class="button linkedin bouncy">
+                <i class="fa-brands fa-linkedin-in" style="vertical-align: middle;"></i>
             </a>
-            <a href="https://github.com/mmarsell" target="_blank" class="github">
-                <svg viewBox="0 0 24 24" height="200">
-                    <title>Github</title>
-                    <path style="fill:white" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            
-                    </svg>
+            <a href="https://github.com/mmarsell" target="_blank" class="button github bouncy" style="animation-delay:0.07s">
+                <i class="fa-brands fa-github-alt" style="vertical-align: middle;"></i>
             </a>
-            <a href="https://youtube.com/marselluh" target="_blank" class="youtube">
-                <svg role="img" viewBox="0 0 461.001 461.001" height="200">
-                    <title>YouTube</title>
-                    <path style="fill:white;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728   c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137   C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607   c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
-                    </svg>
+            <a href="https://youtube.com/marselluh" target="_blank" class="button youtube bouncy" style="animation-delay:0.14s">
+                <i class="fa-brands fa-youtube" style="vertical-align: middle;"></i>
             </a>
-            <a href="michael_marsella_resume.pdf" target="_blank" class="resume" download>
-                <svg role="img" viewBox="0 0 24 24" height="200">
-                    <title>Resume</title>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7368 2.76196H8.08376C6.02476 2.76196 4.24976 4.43096 4.24976 6.49096V17.204C4.24976 19.38 5.90876 21.115 8.08376 21.115H16.0728C18.1328 21.115 19.8018 19.265 19.8018 17.204V8.03796L14.7368 2.76196Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M14.474 2.75024V5.65924C14.474 7.07924 15.623 8.23124 17.042 8.23424C18.359 8.23724 19.706 8.23824 19.797 8.23224" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path opacity="0.4" d="M14.2841 15.5579H8.88708" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path opacity="0.4" d="M12.2426 10.6057H8.8866" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+            <a href="michael_marsella_resume.pdf" target="_blank" class="button resume bouncy"  style="animation-delay:0.21s" download>
+                <i class="fa-solid fa-paperclip" style="vertical-align: middle;"></i>
             </a>
         </div>
     </div>

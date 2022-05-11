@@ -51,6 +51,7 @@ body {
   color: #fff;
   background: #333;
   background-image: url(../images/background.webp);
+  background-size: cover;
 }
 body .card {
   margin: auto;
@@ -63,9 +64,8 @@ body .card {
   backdrop-filter: blur(20px);
   transform: perspective(500px);
   transform-style: preserve-3d;
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
-  max-height: 85%;
 }
 body .card .card > .profile {
   transform: translateZ(20px);
@@ -76,60 +76,86 @@ body .card .card > .profile {
   margin-right: auto;
 }
 body .card .profile > img {
-  max-width: 25%;
+  max-width: 40%;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-body .card .card-body {
-  font-size: 1.5em;
+body .card .card > .card-body {
+  font-size: 0.6em;
   display: flex;
-  place-items: center;
-  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
 }
-body .card .social {
-  margin-top: -20vh;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  place-items: center;
-  transform: scale(0.5);
-  transform-origin: center;
-  transform-box: fill-box;
-  filter: drop-shadow(10px 10px 10px #333);
-  gap: 50px;
+body .card a.button {
+  display: block;
+  border: 0.1em solid #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.3em;
+  border-radius: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #ffffff;
+  text-align: center;
+  transition: all 0.15s;
+  max-width: 50%;
 }
-body .card .social a {
-  height: 40vh;
-  width: 40vh;
-  border-radius: 50%;
-  place-items: center;
-  display: grid;
-  fill: #fff;
-  transition: all 0.1s ease-in-out;
+body .card a.button:hover {
+  text-shadow: 0 0 2em rgb(255, 255, 255);
+  color: #333;
+  border-color: #333;
+}
+@media all and (max-width: 30em) {
+  body .card a.button {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+body .card .bouncy {
+  animation: bouncy 10s infinite linear;
   position: relative;
 }
-body .card .social a:hover,
-body .card .social a:focus {
-  background-color: #aab8c2;
+@keyframes bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
 }
-body .card .social a:hover > svg,
-body .card .social a:focus > svg {
-  transform: scale(1.2);
-  transition: all 0.2s ease-in-out;
-}
-body .card .social .linkedin {
+body .card .button.linkedin {
   background-color: #0072b1;
 }
-body .card .social .instagram {
+body .card .button.instagram {
   background-color: #e1306c;
 }
-body .card .social .github {
+body .card .button.github {
   background-color: #333;
 }
-body .card .social .youtube {
+body .card .button.youtube {
   background-color: #FF0000;
 }
-body .card .social .resume {
+body .card .button.resume {
   background-color: #282828;
 }
 

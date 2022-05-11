@@ -72,6 +72,7 @@ body {
   color: $white;
   background: #333;
   background-image: url(../images/background.webp);
+  background-size: cover;
 
 
 .card {
@@ -85,9 +86,8 @@ body {
   backdrop-filter: blur(20px);
   transform: perspective(500px);
   transform-style: preserve-3d;
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
-  max-height: 85%;
 
 
  .card  > .profile{
@@ -100,70 +100,83 @@ body {
 }
 
 .profile > img {
-  max-width: 25%;
+  max-width: 40%;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-.card-body{
-  font-size: 1.5em;
+.card > .card-body{
+  font-size: .6em;
   display: flex;
-  place-items: center;
-  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
 }
 
-.social{
-  margin-top: -20vh;
-  display: grid;
-  grid-template-columns: repeat(2,auto);
-  place-items: center;
-  transform: scale(0.5);
-  transform-origin: center;
-  transform-box: fill-box;
-  filter: drop-shadow(10px 10px 10px #333);
-  gap: 50px;
+a.button{
+  display:block;
+  border: 0.1em solid #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: .3em;
+  border-radius: 2em;
+  font-family:Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  background-color: #ffffff;
+  text-align: center;
+  transition: all 0.15s;
+  max-width: 50%;
 }
 
-.social a {
-  height: 40vh;
-  width: 40vh;
-  border-radius: 50%;
-  place-items: center;
-  display: grid;
-  fill: #fff;
-  transition: all 0.1s ease-in-out;
+a.button:hover{
+  text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+  color: #333;
+  border-color: #333;
+}
+
+@media all and (max-width:30em){
+  a.button{
+    display:block;
+    margin: 0.4em auto;
+  }
+}
+
+.bouncy {
+  animation: bouncy 10s infinite linear;
   position: relative;
 }
 
-.social a:hover,
-.social a:focus{
-  background-color: #aab8c2;
+@keyframes bouncy {
+  0% {top:0em}
+  40% {top:0em}
+  43% {top: -0.9em}
+  46% {top: 0em}
+  48% {top: -0.4em}
+  50% {top: 0em}
+  100% {top:0em}
 }
 
-.social a:hover > svg,
-.social a:focus > svg {
-  transform: scale(1.2);
-  transition: all 0.2s ease-in-out;
-}
-
-.social .linkedin {
+.button.linkedin {
   background-color: #0072b1;
 }
 
-.social .instagram {
+.button.instagram {
   background-color: #e1306c;
 }
 
-.social .github {
+.button.github {
   background-color: #333;
 }
 
-.social .youtube {
+.button.youtube {
   background-color: #FF0000;
 }
 
-.social .resume {
+.button.resume {
   background-color: #282828;
 }
 
